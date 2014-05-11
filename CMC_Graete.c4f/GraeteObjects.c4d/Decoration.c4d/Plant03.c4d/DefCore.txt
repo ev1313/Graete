@@ -1,0 +1,10 @@
+[DefCore]
+id=PT03
+Name=Plant03(9A)
+Version=4,9,5
+Category=C4D_StaticBack|C4D_MouseIgnore|C4D_SelectVegetation
+MaxUserSelect=10
+Width=60
+Height=60
+Offset=-30,-30
+StretchGrowth=1

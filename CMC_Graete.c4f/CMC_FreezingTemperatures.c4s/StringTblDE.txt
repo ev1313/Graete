@@ -1,0 +1,13 @@
+CreatingFurniture=Szenario wird eingerichtet...
+CreatingEquipment=Ausrüstung wird plaziert...
+
+MsgDoor=Das Sicherheitssystem reorganisiert die Türsysteme.
+
+Team1=Eurocorps
+Team2=Aggressoren
+
+Flag1=Himmelsinseln
+Flag2=Balkon
+Flag3=Stationsinneres
+Flag4=Funkstation
+Flag5=Ostturm

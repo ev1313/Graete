@@ -1,0 +1,13 @@
+CreatingFurniture=Szenario wird eingerichtet...
+CreatingEquipment=Ausrüstung wird plaziert...
+
+MsgDoor=Das Sicherheitssystem reorganisiert die Türsysteme.
+
+Team1=Eurocorps
+Team2=Aggressoren
+
+Flag1=Mittelposten
+Flag2=Nordposten
+Flag3=Südposten
+Flag4=Westposten
+Flag5=Ostposten

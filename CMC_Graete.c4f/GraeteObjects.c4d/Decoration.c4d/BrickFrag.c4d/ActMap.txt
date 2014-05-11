@@ -1,0 +1,14 @@
+[Action]
+Name=PicOne
+Procedure=NONE
+Facet=0,0,51,30
+
+[Action]
+Name=PicTwo
+Procedure=NONE
+Facet=51,0,32,30
+
+[Action]
+Name=PicThree
+Procedure=NONE
+Facet=83,0,64,30

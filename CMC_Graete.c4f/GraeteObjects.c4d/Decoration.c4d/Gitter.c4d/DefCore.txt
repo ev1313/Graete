@@ -1,0 +1,23 @@
+[DefCore]
+id=GTD8
+Name=New Object
+Version=4,9,5
+Category=18960
+MaxUserSelect=10
+Value=10
+Mass=10
+Components=METL=3;
+
+
+Height=41
+Width=18
+Offset=-11,-27
+Picture=22,12,168,258
+SolidMask=0,0,8,41,0,0
+TopFace=0,0,18,42,0,0
+Vertices=4
+VertexX=-6,7,-7,6
+VertexY=14,14,-19,-18
+VertexFriction=30,30,20,20
+VertexCNAT=0,0,0,0
+ 

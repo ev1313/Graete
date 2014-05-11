@@ -1,0 +1,18 @@
+[Teams]
+LastTeamID=2
+TeamDistribution=Host
+TeamColors=true
+
+  [Team]
+  id=1
+  Name=Eurocorps
+  PlayerCount=1
+  Players=1
+  Color=33535
+
+  [Team]
+  id=2
+  Name=Aggressoren
+  PlayerCount=1
+  Players=2
+  Color=16711680

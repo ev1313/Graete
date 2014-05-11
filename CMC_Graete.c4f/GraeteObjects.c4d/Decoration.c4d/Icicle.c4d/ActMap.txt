@@ -1,0 +1,7 @@
+[Action]
+Name=Hanging
+Procedure=NONE
+Length=4
+Delay=0
+Facet=0,0,14,50
+NextAction=Hold

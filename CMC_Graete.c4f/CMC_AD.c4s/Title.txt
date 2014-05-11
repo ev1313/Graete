@@ -1,0 +1,2 @@
+DE:CMC - <c ffff33>Luftherrschaft</c>
+US:CMC - <c ffff33>Airborn Dominance</c>

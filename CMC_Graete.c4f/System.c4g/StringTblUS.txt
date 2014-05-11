@@ -1,0 +1,51 @@
+// Class Selection
+
+assault=Assault
+assault_desc=Qualified for all distances.|Assaults form the major attack|unit of the team and therefore are|mostly front and center in combat.
+medic=Medic
+medic_desc=Medics are the backbone of team|support and can heal and reanimate|wounded effectively. They are the|ultimate teamplayers.
+support=Supporter
+support_desc=Heavily armed and equppied with|lots of ammo. Idial to rain down|barrages on enemies and useful|in any stormy situation.
+antiskill=Antiskill
+antiskill_desc=Part of the special forces which|effectivly use riotshield to fend|of enemy fire. Use Shotguns to|quickly start counterattacks.
+artillerist=Artillerist
+artillerist_desc=Equipped with a powerful grenade|launcher, this unit acts behind|the battlefield and fires deadly|artillery onto the enemy.
+specop=SpecOp
+specop_desc=This specialforces are|masters of camouflage, but|they will go down|on only a view shots.
+
+// CTF
+
+ReturnedTheFlag=%s returned the flag
+CapturedTheFlag=%s captured the flag
+HasTheFlag=%s has got the flag of team <c %x>%s</c>
+FlagLost=The flag of <c %x>%s</c> was dropped
+FlagReturned=The flag of <c %x>%s</c> was returned
+
+
+// Chooser
+
+ChoosingPlayer=%s configures the game, please be patient...
+Choosing=%s configures the rules, please be patient...
+Goal=The goal has been chosen: <c ffff33>%s</c>
+Rules=Rules chosen: 
+Effects=Effect Level
+MoreEffects=Increase Effect Level
+LessEffects=Decrease Effect Level
+EffectInfo=Configure Effect Level
+CreateRules=Rules
+DarknessChose=Configure darkness
+GoalChose=Configure goal
+AIMenu=AI setup
+RuleInfo=Configure rules
+AIInfo=Option to configure AI players
+Finished=Finished
+MoreWinScore=Increase score
+LessWinScore=Decrease score
+MoreDarkness=Darker
+LessDarkness=Brighter
+OneAIMore=One bot more
+OneAILess=One bot less
+NewTeam=New Team
+FairTeams=Fair Teams
+FairTeamsInfo=Fair match
+OnlyDeleteLastTeam=The last team has to be removed first!

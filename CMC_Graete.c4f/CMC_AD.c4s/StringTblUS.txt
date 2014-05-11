@@ -1,0 +1,13 @@
+CreatingFurniture=Creating furniture...
+CreatingEquipment=Placing equipment...
+
+MsgDoor=The security system is rearranging door systems.
+
+Team1=Eurocorps
+Team2=Aggressors
+
+Flag1=Center
+Flag2=North
+Flag3=South
+Flag4=West
+Flag5=East

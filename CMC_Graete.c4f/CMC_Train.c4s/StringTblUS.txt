@@ -1,0 +1,13 @@
+CreatingInterior=Creating furniture...
+CreatingEquipment=Placing equipment...
+CreatingDecoration=Placing decoration...
+MsgDoor=The security system is rearranging door systems.
+
+Team1=Eurocorps
+Team2=Aggressors
+
+Flag1=Front Waggon
+Flag2=Eurocorps Waggon
+Flag3=Middle Waggon
+Flag4=Aggressors Waggon
+Flag5=Last Waggon

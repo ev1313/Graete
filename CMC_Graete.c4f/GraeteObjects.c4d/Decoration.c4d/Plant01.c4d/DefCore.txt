@@ -1,0 +1,11 @@
+[DefCore]
+id=PT01
+Name=New Object
+Version=4,9,5
+Category=C4D_StaticBack|C4D_MouseIgnore
+MaxUserSelect=10
+Width=23
+Height=39
+Offset=-12,-20
+
+ 

@@ -1,0 +1,14 @@
+CreatingInterior=Szenario wird eingerichtet...
+CreatingEquipment=Ausrüstung wird plaziert...
+CreatingDecoration=Dekoration wird plaziert...
+
+MsgDoor=Das Sicherheitssystem reorganisiert die Türsysteme.
+
+Team1=Eurocorps
+Team2=Aggressoren
+
+Flag1=Westlicher Schacht
+Flag2=Eingang
+Flag3=Lagerwaggon
+Flag4=Funkstation
+Flag5=Östlicher Schacht

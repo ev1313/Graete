@@ -1,0 +1,9 @@
+[Action]
+Name=PicOne
+Procedure=NONE
+Facet=0,0,20,40
+
+[Action]
+Name=PicTwo
+Procedure=NONE
+Facet=20,0,19,12

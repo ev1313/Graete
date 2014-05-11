@@ -1,0 +1,14 @@
+CreatingFurniture=Szenario wird eingerichtet...
+CreatingEquipment=Ausrüstung wird plaziert...
+
+Team1=Aggressoren
+Team2=Eurocorps
+
+Flag1=Aggressorenbasis
+Flag2=Eurocorpbasis
+Flag3=Tower
+Flag4=Ostflügel
+Flag5=Westflügel
+Flag6=Balkon
+Flag7=Westspitze
+Flag8=Ostspitze

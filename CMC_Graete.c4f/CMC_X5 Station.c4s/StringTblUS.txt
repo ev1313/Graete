@@ -1,0 +1,11 @@
+Team1=Alpha
+Team2=Beta
+Team3=Gamma
+Team4=Delta
+
+
+Flag1=Storage Room
+Flag2=Heating System 
+Flag3=Rocket Shaft
+Flag4=Habitable Room
+Flag5=Hospital Wing

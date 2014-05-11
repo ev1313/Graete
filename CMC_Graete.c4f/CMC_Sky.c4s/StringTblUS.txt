@@ -1,0 +1,12 @@
+CreatingFurniture=Creating furniture...
+CreatingEquipment=Placing equipment...
+
+Team1=Aggressors
+Team2=Eurocorps
+
+Flag1=Aggressorbase
+Flag2=Eurocorpbase
+Flag3=Tower
+Flag4=East Wing
+Flag5=West Wing
+Flag6=Balcony

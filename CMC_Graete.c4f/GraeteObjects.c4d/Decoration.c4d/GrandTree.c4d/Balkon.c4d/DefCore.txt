@@ -1,0 +1,8 @@
+[DefCore]
+id=BLKN
+Name=Balkon
+Version=4,9,5
+Category=C4D_StaticBack|C4D_MouseIgnore|C4D_Foreground
+Width=160
+Height=60
+Offset=-80,-30

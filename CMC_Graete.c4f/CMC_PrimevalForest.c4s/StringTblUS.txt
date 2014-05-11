@@ -1,0 +1,11 @@
+CreatingFurniture=Creating furniture...
+CreatingEquipment=Placing equipment...
+
+Team1=Eurocorps
+Team2=Aggressors
+
+Flag1=Tree
+Flag2=Morass
+Flag3=Cave
+Flag4=Storage ground
+Flag5=Balcony

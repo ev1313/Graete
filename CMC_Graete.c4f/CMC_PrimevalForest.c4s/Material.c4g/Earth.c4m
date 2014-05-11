@@ -1,0 +1,12 @@
+[Material]
+Name=Earth
+Color=92,77,45,92,86,43,82,63,28
+Shape=2
+Density=50
+Friction=80
+MaxAirSpeed=100
+MaxSlide=1
+Corrode=75
+Soil=1
+Placement=30
+TextureOverlay=Mud

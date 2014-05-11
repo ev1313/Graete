@@ -1,0 +1,12 @@
+Authors of the Objects:
+
+Vine        -  RedWolfDesign(Western.c4d)
+Fence       -  Hazard.c4d(Graphics.png by Apfelclonk)
+CelticStone -  Apfelclonk
+BigTree     -  Apfelclonk
+Plant01     -  Apfelclonk
+Swamp&Decay -  JOK/ClonkGeist (Ask them please before using there Objects)
+LADR        -  ModernCombat.c4f/Dust.c4s
+Icicles	    -  Saturas
+Graetescreen-  ClonkGeist
+Gitter 	    -  Mupf

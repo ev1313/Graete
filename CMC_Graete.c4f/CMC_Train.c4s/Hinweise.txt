@@ -1,0 +1,17 @@
+Hinweise bezüglich des Gameplays zu CMC Train 1.1:
+
+Aus offenen Betatests hat sich ergeben, dass folgende Ziele dem Spielspaß mindern können:
+ Goal: CTF   und Goal:  GOCC
+
+Da die Karte (Zitat:)"Zu viel X-Achse.">[CMC] Apfel< hat können die Flaggenpunkte nur von einer Seite eingenommen werden, was zum Stellungskrieg führen kann. Daraus resultierend dauert das Spiel länger als übliche ~30min. beachtet das bei der Wahl der Spielziele!
+
+>An dieser Stelle die Frage, ob diese Ziele im 1.1 Realese auch drinne bleiben sollten! Es steht noch nicht fest...
+
+Sound: Da Züge nun mal auch nicht lautlos sind (eher richtig laut :o) empfiehlt es sich die stärke von "sound" etwas runterzudrehen! (Nicht ausmachen sonst geht der cmc Sound für die Runde verloren...)
+
+Generell gibt es auch Komplikationen: ("AMG ich bin vom Zug gefallen! Mach die Übergänge ZU!!!") Solche "Probleme" sind durchaus gewollt, leglich unnötige Erschwernisse wie hinderliche Ecken wurden ausgebügelt.
+Auch extrem kann es werden, wenn Scharfschützen über das Dach des Zuges ihre Arbeit ungehinderd nachgehen können.
+-->Hierzu mein Hinweis: Im Update wurde der Zug gefüllter, was snipen im Waggonbereich ineffizient gemacht hat. Wer also dem Heckenschützen die Lichter ausknipsen möchte kann halbwegs sicher unten lang passieren. Das Dach ist aber weiterhin so gewollt.
+
+An dieser Stelle wünsche ich dem Aufmerksamen Leser viel Spaß und wenn es (hilfreiche) Kritik oder Verbesserungsvorschläge geben sollte, kann man mich über den IRC-Chat #clonken bzw. #clonk-[Empire] kontaktieren.
+

@@ -1,0 +1,10 @@
+[DefCore]
+id=TR01
+Name=Tree01(9A)
+Version=4,9,5
+Category=C4D_StaticBack|C4D_SelectVegetation|C4D_MouseIgnore
+MaxUserSelect=10
+Width=82
+Height=125
+Offset=-41,-62
+StretchGrowth=1

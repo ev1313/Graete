@@ -1,0 +1,5 @@
+[Action]
+Name=Pic
+Length=4
+Procedure=NONE
+Facet=0,0,13,13

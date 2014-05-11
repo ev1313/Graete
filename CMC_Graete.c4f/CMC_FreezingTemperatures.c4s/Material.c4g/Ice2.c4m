@@ -1,0 +1,11 @@
+[Material]
+Name=Ice2
+Color=127,127,127,127,127,127,127,127,127
+Shape=1
+Density=50
+Friction=15
+MaxAirSpeed=100
+MaxSlide=1
+Corrode=60
+Placement=21
+TextureOverlay=Sponge
