@@ -89,11 +89,11 @@ func PlaceFurniture()  {
   
   // Leitern::
   var ladr = CreateObject(LADR, 1470, 520, -1);
-  ladr->Set(7);
+  ladr->Set(7, LADR_Left|LADR_Right|LADR_Front|LADR_Additional, "W");
   ladr->SetPosition(1470, 240);
-  CreateObject(LADR, 1257, 520, -1)->Set(13);
-  CreateObject(LADR, 1510, 450, -1)->Set(23);
-  CreateObject(LADR, 1073, 490, -1)->Set(24);
+  CreateObject(LADR, 1257, 520, -1)->Set(13, LADR_Left|LADR_Right|LADR_Front|LADR_Additional, "W");
+  CreateObject(LADR, 1510, 450, -1)->Set(23, LADR_Left|LADR_Right|LADR_Front|LADR_Additional, "W");
+  CreateObject(LADR, 1073, 490, -1)->Set(24, LADR_Left|LADR_Right|LADR_Front|LADR_Additional, "W");
   
   // Pilze::
   CreateObject(MUSH, 1710, 580);
