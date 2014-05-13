@@ -1,17 +1,15 @@
-/*-- Neues Objekt --*/
+/*-- Eiszapfen --*/
 
-#strict
+#strict 2
 
-func Initialize() {
-   
+func Initialize() 
+{
   return(1);
 }
 
-func Hit() {
-  var obj;
-//  if(GetAction()ne"Falling") return(1);
+func Hit() 
+{
   Sound("RockBreak*");
-  // unten
-	
+  
   RemoveObject();
 }
