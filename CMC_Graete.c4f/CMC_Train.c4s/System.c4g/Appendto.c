@@ -6,11 +6,11 @@ protected func Hit()
 {
 	if((GetY()+GetDefHeight(GetID())/2) >= 530) 
 	{
-  	  SetXDir(150);
+  	  SetXDir(200);
 	  SetYDir(-2);
 	}
 	
-	if(GetX() >= LandscapeWidth()-15)	
+	if(GetX() >= LandscapeWidth()-20)	
 	  RemoveObject(); 
 	_inherited(...);
 }

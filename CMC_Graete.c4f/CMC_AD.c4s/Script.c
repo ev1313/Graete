@@ -1,17 +1,11 @@
 /*-- CMC - Luftherrschaft --*/
 
-#strict
+#strict 2
 #include CSTD
 
 static aFlag,idheight;
 
 func MaxTime() { return 180; }
-
-func ChooserRuleConfig()
-{
-  var array = [RWDS, NOFF, WPST, NODR, NSPC];
-  return array;
-}
 
 /* Initalisierung */
 
@@ -29,14 +23,6 @@ func Initialize()
   //Script starten
   ScriptGo(1);
   return(1);
-}
-
-/* Plazierungslisten */
-
-func ChooserRuleConfig()
-{
-  //Standardregelsatz: Belohnungssystem, Kein FriendlyFire, Waffen bleiben, Arena
-  return [RWDS,NOFF,WPST,NODR];
 }
 
 func CreateFurniture()

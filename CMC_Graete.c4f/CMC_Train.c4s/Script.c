@@ -5,12 +5,6 @@
 
  static aFlag,idheight;
 
- func ChooserRuleConfig()
- {
-   var array = [RWDS, NOFF, WPST, NODR, NSPC];
-   return array;
- }
-
  /* Initalisierung, es ist an der Zeit aufzuräumen! */
 
  func Initialize()
@@ -367,7 +361,6 @@ func Script1()
   CreateObject(WSHB,2470, 440, -1);
   CreateObject(WSHB,1170, 430, -1);
 }
-
 
  /* Regelwähler */
 

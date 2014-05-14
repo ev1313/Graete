@@ -12,7 +12,7 @@ Definition3=ModernCombat.c4d
 
 [Game]
 StructNeedEnergy=0
-Goals=GLMS=10;GTDM=10;GOCC=1;GCTF=3;GHTF=1;GBAS=1
+Goals=GTDM=10;GLMS=10;GCTF=3;GHTF=1;GBAS=1;GOCC=1
 Rules=CHOS=1;MCSL=1
 
 [Player1]
