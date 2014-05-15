@@ -1,41 +1,41 @@
 /*-- Train --*/
 
- #strict 2
- #include CSTD
+#strict 2
+#include CSTD
 
- static aFlag,idheight;
+static aFlag,idheight;
 
- /* Initalisierung, es ist an der Zeit aufzuräumen! */
+func Initialize()
+{
+  SetSkyParallax(1, 20,20, 500,0, SkyPar_Keep, SkyPar_Keep);
+  AddEffect("Background",0,101,1);   
 
- func Initialize()
- {
-   SetSkyParallax(1, 20,20, 500,0, SkyPar_Keep, SkyPar_Keep);
-   AddEffect("Background",0,101,1);   
-
-   //Flaggen
-   aFlag = [];
-   //Wartemusik einstellen
-   SetWaitingMusic();
-   //Einrichtung plazieren
-   CreateInterior();
-   //Equipment plazieren
-   CreateEquipment();
-   //Ausrüstung plazieren
-   CreateEquipment();
-   //Dekoration plazieren
-   CreateDecoration();
-   //Script starten
-   ScriptGo(1);
-  DrawMaterialQuad("WallB",0,539,0,540,LandscapeWidth(),540,LandscapeWidth(),539);
+  //Flaggen
+  aFlag = [];
+  //Wartemusik einstellen
+  SetWaitingMusic();
+  //Einrichtung plazieren
+  CreateInterior();
+  //Equipment plazieren
+  CreateEquipment();
+  //Ausrüstung plazieren
+  CreateEquipment();
+  //Dekoration plazieren
+  CreateDecoration();
+  
+  ScriptGo(true);
   return(1);
- }
+}
 
- /* Plazierungslisten */
+/* Plazierungslisten */
 
- func CreateInterior()
- {
-   Log("$CreatingInterior$");
+func CreateInterior()
+{
+  Log("$CreatingInterior$");
 
+  //Schienen
+  DrawMaterialQuad("WallB",0,539,0,535,LandscapeWidth(),535,LandscapeWidth(),539);
+  
   //Rampen
   DrawMaterialQuad("Wall-Plate",620, 370, 610, 360, 610, 360, 610, 370,true);
   DrawMaterialQuad("Wall-Plate",950, 370, 940, 360, 940, 360, 940, 370,true);
@@ -156,9 +156,7 @@
   CreateObject(DGND, 2680, 500, -1);
   CreateObject(DGND, 820, 500, -1);
 
-  // Sounds
-
-  // Zug
+  // Zugsound
   CreateObject(HE5G, 635, 520, -1)->LoopWheel();
   CreateObject(HE5G, 965, 520, -1)->LoopWheel();
   CreateObject(HE5G,1295, 520, -1)->LoopWheel();
@@ -170,7 +168,7 @@
   CreateObject(HE5G,3100, 520, -1)->LoopWheel();
   CreateObject(HE5G,3400, 520, -1)->LoopWheel();
 
-  //Lautsprecher
+  //Lautsprechersound
   CreateObject(SE4K, 540, 454, -1)->Set("Announce*.ogg",3000,200);
   CreateObject(SE4K, 2124, 452, -1)->Set("Announce*.ogg",3000,200);
  
@@ -179,16 +177,11 @@
   CreateObject(SBBA, 1094, 360, -1);
   CreateObject(SBBA, 2486, 360, -1)->Right();
   CreateObject(SBBA, 2424, 360, -1);
- }
+}
 
- func CreateEquipment()
- {
+func CreateEquipment()
+{
   Log("$CreatingEquipment$");
-  //Alle Objekte folglich von links oben nach rechts unten
-
-  //Munitionskisten (Kugeln)
-  CreateObject (AMCT, 560, 500, -1)->Set(ABOX);
-  CreateObject (AMCT,3150, 500, -1)->Set(ABOX);
 
   //Munitionskiste (Granaten)
   CreateObject (AMCT,1880, 430, -1)->Set(GBOX);
@@ -214,16 +207,6 @@
   store->AddWare(SGRN,-1);
   store->AddWare(STUN,-1);
   store->AddWare(SRBL,-1);
-
- }
-
-func Script1()
-{
-	for(var obj in FindObjects(Find_ID(LCKR)))
-	{
-		if(Random(3) == 1) { CreateContents(RndID(),obj); }
-	}
-	return 1;
 }
 
  func CreateDecoration()
@@ -362,42 +345,42 @@ func Script1()
   CreateObject(WSHB,1170, 430, -1);
 }
 
- /* Regelwähler */
+/* Regelwähler */
 
- public func ChooserFinished()
- {
-   inherited();
+public func ChooserFinished()
+{
+  inherited();
    
-   //Starttitel und Musikliste zusammenstellen
-   SetPlayList("CMC_Base Groove.ogg;CMC_Firehawk.ogg;CMC_Friendly Unit.ogg;CMC_Getaway.ogg;CMC_Deep Universe.ogg;CMC_Eurocorps.ogg;CMC_Moving Squad.ogg;CMC_Offensive.ogg;CMC_Rock Go On.ogg;CMC_Showtime.ogg;CMC_Slow Motion.ogg;CMC_Striking Force.ogg;CMC_No Good.ogg;CMC_Obsession.ogg;CMC_Your Eyes.ogg");
-   Music("CMC_Eurocorps.ogg");
+  //Starttitel und Musikliste zusammenstellen
+  SetPlayList("CMC_Base Groove.ogg;CMC_Firehawk.ogg;CMC_Friendly Unit.ogg;CMC_Getaway.ogg;CMC_Deep Universe.ogg;CMC_Eurocorps.ogg;CMC_Moving Squad.ogg;CMC_Offensive.ogg;CMC_Rock Go On.ogg;CMC_Showtime.ogg;CMC_Slow Motion.ogg;CMC_Striking Force.ogg;CMC_No Good.ogg;CMC_Obsession.ogg;CMC_Your Eyes.ogg");
+  Music("CMC_Eurocorps.ogg");
 
-   //Teams abfragen
-   var aTeams = [false,false,false,false,false];
-   for(var i = 0; i < GetPlayerCount(); i++)
-     aTeams[GetPlayerTeam(GetPlayerByIndex(i))] = true;
+  //Teams abfragen
+  var aTeams = [false,false,false,false,false];
+  for(var i = 0; i < GetPlayerCount(); i++)
+    aTeams[GetPlayerTeam(GetPlayerByIndex(i))] = true;
 
-   //CTF-Spielziel
-   if(FindObject(GCTF))
-   {
+  //CTF-Spielziel
+  if(FindObject(GCTF))
+  {
     if(aTeams[1] == true)
-    {CreateFlag(1, 520, 500,GetTeamColor(1));}
+      CreateFlag(1, 520, 500,GetTeamColor(1));
     if(aTeams[2] == true)
-    {CreateFlag(2,3060, 500,GetTeamColor(2));}
-   }
+      CreateFlag(2,3060, 500,GetTeamColor(2));
+  }
 
-    //MR-Spielziel
+  //MR-Spielziel
   if(FindObject(GMNR))
   {
-   //Geldsäcke
-   AddMoneySpawn(1050, 430, [15]);
-   AddMoneySpawn(1790, 430, [20]);
-   AddMoneySpawn(2500, 430, [15]);
-   }
+    //Geldsäcke
+    AddMoneySpawn(1050, 430, [15]);
+    AddMoneySpawn(1790, 430, [20]);
+    AddMoneySpawn(2500, 430, [15]);
+  }
 
-   //OP-Spielziel
-   if(FindObject(GOCC))
-   {
+  //OCC-Spielziel
+  if(FindObject(GOCC))
+  {
     //Waffenautomat entfernen  
     RemoveAll(WPVM);      
 
@@ -405,14 +388,15 @@ func Script1()
     aFlag[0] -> AddSpawnPoint( 460, 340);
     aFlag[0] -> AddSpawnPoint( 770, 420);
     aFlag[0] -> AddSpawnPoint( 800, 340);
+
     if(aTeams[1] == true)
     {
-     aFlag[0]->Set("$Flag1$",100,2);
-     aFlag[0]->Capture(1,1);
+       aFlag[0]->Set("$Flag1$",100,2);
+       aFlag[0]->Capture(1,1);
     }
     else
     {
-     aFlag[0]->Set("$Flag1$",0,2);
+       aFlag[0]->Set("$Flag1$",0,2);
     }
 
     aFlag[1] = CreateObject(OFPL,1120, 360,NO_OWNER);
@@ -437,20 +421,21 @@ func Script1()
     aFlag[4] -> AddSpawnPoint(3080, 340);
     aFlag[4] -> AddSpawnPoint(2680, 425);
     aFlag[4] -> AddSpawnPoint(2900, 345);
+  
     if(aTeams[2] == true)
     {
-     aFlag[4]->Set("$Flag5$",100,2);
-     aFlag[4]->Capture(2,1);
+       aFlag[4]->Set("$Flag5$",100,2);
+       aFlag[4]->Capture(2,1);
     }
     else
     {
-     aFlag[4]->Set("$Flag5$",0,2);
+       aFlag[4]->Set("$Flag5$",0,2);
     }
-   }
-   //Base Assault-Spielziel
-   if(FindObject(GBAS))
-   {
-    //Da stört ein einzelner Automat :o
+  }
+   
+  //Base Assault-Spielziel
+  if(FindObject(GBAS))
+  {
     RemoveAll(VGMN);
     CreateObject(VGMN, 3020, 500, -1);
     CreateObject(VGMN, 2060, 500, -1)->Set(2);
@@ -462,34 +447,37 @@ func Script1()
 
     AddAssaultTarget(CMSN,2450, 360, 600, 2, "$Flag4$", 2, [[2170, 430], [2550, 430], [2545, 485]]);
     AddAssaultTarget(CCP2,3065, 500, 300, 2, "$Flag5$", 3, [[3080, 340], [2680, 425], [2900, 345]]);
-   }
-   //HTF-Spielziel
-   if (FindObject(GHTF))
-   {
+  }
+   
+  //HTF-Spielziel
+  if(FindObject(GHTF))
+  {
     //Waffenautomat entfernen
     RemoveAll(WPVM); 
 
     //Weg mit dem Zeugs!
-     RemoveAll(AMCT);
+    RemoveAll(AMCT);
   
     //Und her mit dem Handlicheren!
     if(!FindObject(NOAM))
-   {
-    //Kugeln
-    PlaceSpawnpoint(ABOX, 1690, 420);
-     
-    //Granaten
-    PlaceSpawnpoint(GBOX, 1880, 420);    
+    {
+      //Kugeln
+      PlaceSpawnpoint(ABOX, 1690, 420);
+      CreateObject (AMCT, 560, 500, -1)->Set(ABOX);
+      CreateObject (AMCT,3150, 500, -1)->Set(ABOX);
 
-    //Raketen
-    PlaceSpawnpoint(MBOX, 1789, 350);
+      //Granaten
+      PlaceSpawnpoint(GBOX, 1880, 420);    
+
+      //Raketen
+      PlaceSpawnpoint(MBOX, 1789, 350);
     }
 
-   //Teamgrenzen
-   CreateObject(BRDR, 1295, 0, -1)->Set(0,1,0,1,1);
-   CreateObject(BRDR, 2285, 0, -1)->Set(1,1,0,1,2);
+    //Teamgrenzen
+    CreateObject(BRDR, 1295, 0, -1)->Set(0,1,0,1,1);
+    CreateObject(BRDR, 2285, 0, -1)->Set(1,1,0,1,2);
     
-   //Flaggenposten
+    //Flaggenposten
     var flag = CreateObject(OFPL, 1790,500, -1);
     flag->~Set("$Flag3$");
    }
@@ -497,31 +485,41 @@ func Script1()
 
  /* Relaunch */
 
- public func RelaunchPosition(& iX, & iY, int iTeam)
- {
-   //DM/LMS /CTF /GMNR-Spielziel
-   if(FindObject(GTDM) || FindObject(GLMS) || FindObject(GCTF) || FindObject(GHTF)  || FindObject(GMNR))
-   {
-   if(iTeam == 1)
-   {
-    return [[515, 490], [490, 350], [700, 490]];
-   }
-   if(iTeam == 2)
-   {
-    return [[3170, 490], [3100, 350], [2890, 490]];
-   }
-   return(1);
+public func RelaunchPosition(& iX, & iY, int iTeam) 
+{
+  //DM/LMS /CTF /GMNR-Spielziel
+  if(FindObject(GTDM) || FindObject(GLMS) || FindObject(GCTF) || FindObject(GHTF)  || FindObject(GMNR))
+  {
+    if(iTeam == 1)
+      return [[515, 490], [490, 350], [700, 490]];
+  
+    if(iTeam == 2)
+      return [[3170, 490], [3100, 350], [2890, 490]];
+   
+    return(1);
   }
 
    //Startsicht
    iX = LandscapeWidth()/2; iY = LandscapeHeight()/2;
- }
+}
 
- func Script420()
+func Script1()
 {
-	CreateObject(HE5G,400,370,-1)->Foo();
+  //Spinde füllen
+  for(var obj in FindObjects(Find_ID(LCKR)))
+  {
+    if(Random(3) == 1) { CreateContents(RndID(),obj); }
+  }
+  
+  return(1);
+}
+
+func Script420()
+{
+  CreateObject(HE5G,400,370,-1)->Foo();
   return(goto(1));
- }
+}
+ 
 func RndID()
 {
 	var rID;
@@ -536,5 +534,5 @@ func RndID()
 	if(rnd == 6) { rID = STUN; }
 	
 	return rID;
- }
 }
+

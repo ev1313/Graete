@@ -8,5 +8,5 @@ protected func Hit()
 {
 	if((GetY()+GetDefHeight(HZCK)/2) >= 530) { FakeDeath(this); }
 	
-	_inherited();
+	_inherited(...);
 }
