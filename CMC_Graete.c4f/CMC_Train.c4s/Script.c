@@ -507,9 +507,8 @@ func Script1()
 {
   //Spinde füllen
   for(var obj in FindObjects(Find_ID(LCKR)))
-  {
-    if(Random(3) == 1) { CreateContents(RndID(),obj); }
-  }
+    if(!Random(3)) 
+	  CreateContents(RndID(),obj); 
   
   return(1);
 }
