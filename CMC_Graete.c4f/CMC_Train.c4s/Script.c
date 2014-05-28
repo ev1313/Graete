@@ -518,6 +518,16 @@ func Script420()
   CreateObject(HE5G,400,370,-1)->Foo();
   return(goto(1));
 }
+
+func Script400()
+{
+  if(!Random(2))
+  {
+    SetDarkness(10);
+    Schedule("SetDarkness(0)", 150+Random(100));
+  }
+  return 1;
+}
  
 func RndID()
 {
