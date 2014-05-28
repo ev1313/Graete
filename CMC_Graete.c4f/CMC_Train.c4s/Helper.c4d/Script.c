@@ -6,7 +6,7 @@ protected func Initialize() {
 }
 
 public func LoopWheel() {
-	SoundLevel("TrainW",80,this);
+	SoundLevel("TrainW.ogg",80,this);
 	return 1;
 }
 
@@ -23,7 +23,7 @@ protected func FxFooStart(object pObj, int iNr)
 	if(rnd == 1) EffectVar(0,pObj,iNr) = 1;
 	if(rnd == 2) EffectVar(0,pObj,iNr) = 2;
 	
-	Sound(Format("TrainH%d",rnd),0,pObj,100);
+	Sound(Format("TrainH%d.ogg",rnd),0,pObj,100);
 	return 1;
 }
 
@@ -34,12 +34,12 @@ protected func FxFooTimer(object pObj, int iNr, int iTime)
 	if(iTime >= 120 && foo == 1)
 	{
 		EffectVar(0,pObj,iNr) = 3;
-		SoundLevel("TrainWLoop*",100,pObj);
+		SoundLevel("TrainWLoop*.ogg",100,pObj);
 	}
 	
 	if(iTime >= 210 && foo == 2)
 	{
-		SoundLevel("TrainW",100,pObj);
+		SoundLevel("TrainW.ogg",100,pObj);
 		EffectVar(0,pObj,iNr) = 3;
 	}
 	

@@ -37,9 +37,6 @@ protected func FxIntGOCCTimer(pTarget, iEffectNumber)
     if(iTeam = fpost->GetTeam())
 	  aTeamPosts[iTeam-1]++;
   
-  for(var i = 0; i<GetTeamCount();i++)
-    Log("%d,%d",i,aTeamPosts[i]);
-  
   var iHighest = 0;
   for(var loop = 0;loop<GetTeamCount();loop++)
     if(iHighest < aTeamPosts[loop])
